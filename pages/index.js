@@ -17,6 +17,7 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
+    <>
     <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Kevin La Portfolio</title>
@@ -131,5 +132,6 @@ export default function Home() {
 
       </main>
     </div>
+    </>
   );
 }
