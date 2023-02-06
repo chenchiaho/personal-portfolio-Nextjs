@@ -6,7 +6,7 @@ import Bio from "../components/Bio";
 import Project from "../components/Projects";
 
 import chess from "../public/chess.webp";
-import crud from "../public/CRUD.JPG";
+import crud from "../public/crud.JPG";
 import journeys from "../public/journey.JPG";
 import currency from "../public/currency2.jpg";
 
