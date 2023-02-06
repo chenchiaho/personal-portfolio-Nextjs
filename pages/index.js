@@ -7,9 +7,9 @@ import Project from "../components/Projects";
 
 
 import chess from "../public/chess.webp";
-import crud from "../public/crud.jpg";
-import journeys from "../public/journey.jpg";
-import currency from "../public/currency2.jpg";
+import crud from "../public/crud.webp";
+import journeys from "../public/journey.webp";
+import currency from "../public/currency2.webp";
 
 
 export default function Home() {
