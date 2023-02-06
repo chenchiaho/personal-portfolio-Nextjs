@@ -5,7 +5,6 @@ import Navbar from "../components/Navbars";
 import Bio from "../components/Bio";
 import Project from "../components/Projects";
 
-
 import chess from "../public/chess.webp";
 import crud from "../public/crud.webp";
 import journeys from "../public/journey.webp";
@@ -34,7 +33,7 @@ export default function Home() {
     {
       image: chess,
       title: 'Three Kindoms Chess',
-      description: 'A three-player board game developed and published for Android on Google Play. The app was created using the Kotlin programming language',
+      description: 'A three-player board game developed and published for Android on Google Play. The app was created using the Kotlin programming language.',
       link: 'https://play.google.com/store/apps/details?id=com.kevinl.android.a3kingdomschess&hl=en_US&gl=US'
     },
     {
