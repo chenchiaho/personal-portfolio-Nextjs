@@ -5,6 +5,7 @@ import Navbar from "../components/Navbars";
 import Bio from "../components/Bio";
 import Project from "../components/Projects";
 
+
 import chess from "../public/chess.webp";
 import crud from "../public/crud.jpg";
 import journeys from "../public/journey.jpg";
