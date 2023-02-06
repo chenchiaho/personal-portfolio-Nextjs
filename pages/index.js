@@ -7,7 +7,7 @@ import Project from "../components/Projects";
 
 import chess from "../public/chess.webp";
 import crud from "../public/crud.JPG";
-import journeys from "../public/journey.JPG";
+import journeys from "../public/journey.jpg";
 import currency from "../public/currency2.jpg";
 
 
