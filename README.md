@@ -12,5 +12,5 @@ Welcome to my personal portfolio page! This site showcases my work and skills, b
 
 ## Screeshot
 
-<img src="home.JPG" alt="Currency image" width="300"/>
+<img src="home.JPG" alt="Currency image" width="800"/>
 
