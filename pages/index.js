@@ -1,49 +1,16 @@
-import Head from "next/head";
-import { useState } from "react";
+import Head from "next/head"
+import { useState } from "react"
+import Navbar from "../components/Navbars"
+import Bio from "../components/Bio"
+import Project from "../components/Projects"
+import projectList from "../data/projectList"
 
-import Navbar from "../components/Navbars";
-import Bio from "../components/Bio";
-import Project from "../components/Projects";
-
-import chess from "../public/chess.webp";
-import crud from "../public/crud.webp";
-import journeys from "../public/journey.webp";
-import currency from "../public/currency2.webp";
 
 
 export default function Home() {
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false)
 
-  const projects = [
-    {
-      image: journeys,
-      title: 'Circular Journeys Website',
-      description: 'I led the development of the ecommerce page and added payment functionality to the website as a team project. I successfully integrated the Stripe API to provide a seamless payment experience for users.',
-      link: 'https://github.com/joanacircle/circular-journeys-frontend'
-
-    },
-    {
-      image: crud,
-      title: 'User Management System - CRUD',
-      description: 'I created a user-friendly system using Node.js that enables efficient management of user information. The system seamlessly allows for the addition, updating, and removal of users in the back-end.',
-      link: 'https://github.com/chenchiaho/user-management-nodejs-CRUD'
-
-    },
-    {
-      image: chess,
-      title: 'Three Kindoms Chess',
-      description: 'A three-player board game developed and published for Android on Google Play. The app was created using the Kotlin programming language.',
-      link: 'https://play.google.com/store/apps/details?id=com.kevinl.android.a3kingdomschess&hl=en_US&gl=US'
-    },
-    {
-      image: currency,
-      title: 'Quick Currency App',
-      description: 'A simple currency conversion app, utilizing the MVVM architecture. I used Moshi to handle and parse JSON data from an API.',
-      link: 'https://github.com/chenchiaho/QuickCurrency'
-    }
-
-  ];
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -54,16 +21,16 @@ export default function Home() {
 
       </Head>
 
-      <main className=" bg-white px-10 pb-16 dark:bg-gray-900 md:px-20 lg:px-40">
+      <main className="px-10 pb-16 bg-white dark:bg-gray-900 md:px-20 lg:px-40">
         <section >
           <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
           <Bio />
         </section>
 
         <section>
-          <h2 className=" text-center text-3xl font-bold pb-10 dark:text-white md:text-3xl">PROJECTS:</h2>
+          <h2 className="pb-10 text-3xl font-bold text-center dark:text-white md:text-3xl">PROJECTS:</h2>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 ">
-            {projects.map(project => (
+            {projectList.map(project => (
               <Project
                 key={project.title}
                 image={project.image}
@@ -77,5 +44,5 @@ export default function Home() {
 
       </main>
     </div>
-  );
+  )
 }

@@ -1,19 +1,25 @@
-import React from 'react';
-import { BsGithub, BsLinkedin } from 'react-icons/bs';
-import { TfiEmail } from 'react-icons/tfi';
+import React from 'react'
+import { BsGithub, BsLinkedin } from 'react-icons/bs'
+import { TfiEmail } from 'react-icons/tfi'
 
 const SocialLinks = () => (
-  <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-    <a href="https://github.com/chenchiaho">
+  <div className="flex justify-center gap-16 py-3 text-5xl text-gray-600 dark:text-gray-400">
+    <a
+      href="https://github.com/chenchiaho"
+      target='_blank'
+    >
       <BsGithub />
     </a>
-    <a href="https://www.linkedin.com/in/chenchiaho">
+    <a
+      href="https://www.linkedin.com/in/chenchiaho"
+      target='_blank'
+    >
       <BsLinkedin />
     </a>
     <a href="mailto:chenchiaho@gmail.com">
       <TfiEmail />
     </a>
   </div>
-);
+)
 
-export default SocialLinks;
+export default SocialLinks
