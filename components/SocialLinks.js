@@ -7,12 +7,14 @@ const SocialLinks = () => (
     <a
       href="https://github.com/chenchiaho"
       target='_blank'
+      rel="noopener noreferrer"
     >
       <BsGithub />
     </a>
     <a
       href="https://www.linkedin.com/in/chenchiaho"
       target='_blank'
+      rel="noopener noreferrer"
     >
       <BsLinkedin />
     </a>

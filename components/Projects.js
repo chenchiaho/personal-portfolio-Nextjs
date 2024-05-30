@@ -6,6 +6,7 @@ const Project = ({ image, title, description, link }) => (
     <a
       href={link}
       target='_blank'
+      rel="noopener noreferrer"
     >
       <Image
         className="object-contain h-48 pt-5 m-auto"
@@ -18,6 +19,7 @@ const Project = ({ image, title, description, link }) => (
       <a
         href={link}
         target='_blank'
+        rel="noopener noreferrer"
       >{title}</a>
     </h3>
     <p className="p-5">

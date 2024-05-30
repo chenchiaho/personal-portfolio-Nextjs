@@ -13,9 +13,10 @@ const Navbar = ({ setDarkMode, darkMode }) => (
       </li>
       <li >
         <a
+          className="px-4 py-2 ml-8 text-white border-none rounded-md bg-gradient-to-r from-cyan-500 text- to-teal-500 whitespace-nowrap"
           href="https://www.cakeresume.com/kevinla"
           target='_blank'
-          className="px-4 py-2 ml-8 text-white border-none rounded-md bg-gradient-to-r from-cyan-500 text- to-teal-500 whitespace-nowrap"
+          rel="noopener noreferrer"
         >
           中文履歷
         </a>
